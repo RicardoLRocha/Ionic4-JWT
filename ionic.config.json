@@ -1,0 +1,7 @@
+{
+  "name": "Ionic4-JWT",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
