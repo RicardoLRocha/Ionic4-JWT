@@ -1,14 +1,38 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Registrado
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <div padding class="centrar">
+        
+    <button ion-button icon-end (click)="updateCount()" [disabled]="disableButton">
+      Solicitar cuenta
+      <ion-icon name="infinite"></ion-icon>
+    </button>
+
+    <button ion-button icon-start (click)="bindCount()" [disabled]="!disableButton">
+      Actualizar Cuenta
+      <ion-icon name="md-cloud-download"></ion-icon>
+    </button>
+  </div>
+  
+  <div padding class="centrar">
+    <button ion-button icon-end (click)="openModal()" [disabled]="disableButton">
+      Ver cuenta
+      <ion-icon name="infinite"></ion-icon>
+    </button>
+  </div>
+
+  Bienvenido <strong>{{user}}</strong>
+
 </ion-content>

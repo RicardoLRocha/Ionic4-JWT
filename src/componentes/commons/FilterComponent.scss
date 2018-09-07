@@ -1,0 +1,11 @@
+FilterComponent-home {
+    .container{
+        background-color: aqua;
+    }
+    .centrar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
